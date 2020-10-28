@@ -87,7 +87,7 @@ function SearchProduct() {
     const [sp, setSp] = useState([]);
     useEffect(() => {
         async function getProducts() {
-            const sanpham = await fetch("http://localhost:4000/products?assasin=true").then(res => res.json());
+            const sanpham = await fetch("https://tda295.herokuapp.com/products?assasin=true").then(res => res.json());
             // Luu vao state
             setSp(sanpham);
         }
@@ -101,7 +101,7 @@ function SearchProduct() {
     const [order, setOrder] = useState("asc");
     const [pageLimit, setPageLimit] = useState(6);
     const [allProducts, setAllProduct] = useState([]);
-    const url = `http://localhost:4000/search-product?_page=1&_limit=${pageLimit}&&q=${search}&&_order=${order}&&_sort=${sort1}`;
+    const url = `https://tda295.herokuapp.com/search-product?_page=1&_limit=${pageLimit}&&q=${search}&&_order=${order}&&_sort=${sort1}`;
 
     const sortGiam = (event) => {
         let thuocTinh = (event.target.id).slice(0, -1);
@@ -126,7 +126,7 @@ function SearchProduct() {
     useEffect(() => {
         async function getProducts() {
             const products = await fetch(url).then(res => res.json());
-            const allProducts = await fetch(`http://localhost:4000/search-product?&&q=${search}`).then(res => res.json());
+            const allProducts = await fetch(`https://tda295.herokuapp.com/search-product?&&q=${search}`).then(res => res.json());
             // const products = await response.json();
             // Luu vao state
             setProducts(products);

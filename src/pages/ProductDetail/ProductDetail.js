@@ -18,7 +18,7 @@ function ProductDetail() {
     const [products, setProducts] = useState([])
     useEffect(() => {
         async function getProducts() {
-            const products = await fetch(`http://localhost:4000/products?id=${id}`).then(res => res.json());
+            const products = await fetch(`https://tda295.herokuapp.com/products?id=${id}`).then(res => res.json());
             //   const products = await response.json();
             // Luu vao state
             setProducts(products);

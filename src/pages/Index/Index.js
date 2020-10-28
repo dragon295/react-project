@@ -26,14 +26,14 @@ function Index() {
   const [sell2, setSell2] = useState([]);
   useEffect(() => {
     async function getProductsIndex() {
-      const products = await fetch("http://localhost:4000/products?").then(res => res.json());
-      const slide = await fetch("http://localhost:4000/products?slide=true").then(res => res.json());
-      const onhome = await fetch("http://localhost:4000/products?onhome=true").then(res => res.json());
-      const lq = await fetch("http://localhost:4000/products?relative=true").then(res => res.json());
-      const shock = await fetch("http://localhost:4000/products?shockDiscounts=true").then(res => res.json());
-      const shock2 = await fetch("http://localhost:4000/products?shockDiscounts2=true").then(res => res.json());
-      const sellall = await fetch("http://localhost:4000/products?sell=true").then(res => res.json());
-      const sellall2 = await fetch("http://localhost:4000/products?sell2=true").then(res => res.json());
+      const products = await fetch("https://tda295.herokuapp.com/products?").then(res => res.json());
+      const slide = await fetch("https://tda295.herokuapp.com/products?slide=true").then(res => res.json());
+      const onhome = await fetch("https://tda295.herokuapp.com/products?onhome=true").then(res => res.json());
+      const lq = await fetch("https://tda295.herokuapp.com/products?relative=true").then(res => res.json());
+      const shock = await fetch("https://tda295.herokuapp.com/products?shockDiscounts=true").then(res => res.json());
+      const shock2 = await fetch("https://tda295.herokuapp.com/products?shockDiscounts2=true").then(res => res.json());
+      const sellall = await fetch("https://tda295.herokuapp.com/products?sell=true").then(res => res.json());
+      const sellall2 = await fetch("https://tda295.herokuapp.com/products?sell2=true").then(res => res.json());
       const index = products.filter(product => product.id === 1);
       // Luu vao state
       setIndex(index);
