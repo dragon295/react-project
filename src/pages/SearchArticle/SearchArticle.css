@@ -1,0 +1,319 @@
+.tkbv {
+	font-size: 16px;
+	color: #ffffff;
+}
+.input-group-tim-kiem {
+	width: 220px;
+	float: right;
+}
+.btn-tim-kiem {
+	height: 38px;
+	background-color: #00E205;
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.text-tim-kiem {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 14px;
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+}
+.text-tim-kiem-1 {
+	color: #00E205;
+}
+.line-green {
+	height: 5px;
+	width: 100%;
+	background-color: #00E205;
+}
+.result-search-1 {
+	padding-right: 0;
+	padding-left: 0;
+}
+.text-tim-kiem-2 {
+	font-size: 14px;
+line-height: 25px;
+align-items: center;
+color: #FFFFFF;
+
+}
+input.input-search-bv {
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+}
+input.input-search-bv::placeholder {
+	background-color: black;
+	color: white;
+}
+input.input-search-bv:focus {
+	background-color: black;
+	border: 1px solid black;
+	color: white;
+}
+.img-bai-viet-1 {
+	width: 50%;
+}
+.column-green-2 {
+	width: 20px;
+	background-color: #00E205;
+}
+.link-bv {
+	color: white;
+}
+.link-bv:hover {
+	text-decoration: none;
+	color: white;
+}
+.title-review {
+	font-size: 16px;
+}
+.title-review:hover {
+	color:  #00E205;
+}
+.review-noi-dung {
+	background-color: black;
+}
+.group-img-ketnoi {
+	padding-right: 0;
+}
+.some-text {
+	font-size: 14px;
+	line-height: 18px;
+	letter-spacing: 0.08em;
+	color: #FFFFFF;
+}
+.bai-bao {
+	padding-right: 0;
+	padding-left: 0;
+}
+.row-green {
+	height: 5px;
+	width: 100%;
+	background-color: #00E205;
+}
+.group-img-ketnoi {
+	text-decoration: none;
+	height: 200px;
+}
+.img-fb, .img-yt, .img-twitter, .img-twitch {
+	position: relative;
+}
+.text-ketnoi-fb, .text-ketnoi-yt, .text-ketnoi-twitch, .text-ketnoi-twitter {
+	position: absolute;
+	bottom: 5%;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-align: center;
+}
+.news {
+	border-bottom: 1px solid #00E205 !important;
+	color: white;
+}
+.link-news {
+	color: white;
+}
+.link-news:hover {
+	color: #00E205;
+}
+.tag-circle-tkbv {
+	width: 9px;
+	height: 6px;
+	border-radius: 100%;
+	background-color: #00E205;
+	margin-top: 2.5%;
+}
+.tag-column {
+	width: 5px;
+	height: 25px;
+	background-color: #00E205;
+}
+.tag-head {
+    color: white;
+    border-bottom: 1px solid #00E205 !important;
+}
+.list-group-item {
+    background-color: black;
+    border: none;
+}
+.btn-tag-0, .btn-tag-1, .btn-tag-2, .btn-tag-3, .btn-tag-4, .btn-tag-5, .btn-tag-6 {
+    background-color: grey;
+    border: 2px solid #272323;
+    transition: 0.25s linear;
+    border-radius: 0.35rem;
+}
+.btn-tag-0:hover, .btn-tag-1:hover, .btn-tag-2:hover, .btn-tag-3:hover, .btn-tag-4:hover, .btn-tag-5:hover, .btn-tag-6:hover {
+	background-color: #00E205;
+	border-color: #00E205;
+	color: white;
+	transition: 0.35s linear;
+}
+.btn-tag-0, .btn-tag-1:focus, .btn-tag-2:focus, .btn-tag-3:focus, .btn-tag-4:focus, .btn-tag-5:focus, .btn-tag-6:focus  {
+	outline: none !important;
+}
+.page-item.active .page-link {
+	background-color: #00E205;
+	border-color: #00E205;
+}
+.page-bg, .page-another {
+	background-color: black;
+	border-color: black;
+	color: white;
+}
+.page-bg:hover {
+	color:black;
+}
+.page-bg:focus, .page-another:focus {
+	box-shadow: none;
+}
+.page-another:hover {
+	background-color: black;
+	color: white;
+	border-color: black;
+}
+@media (min-width: 320px) and (max-width: 1199px) {
+	.btn-tag-1, .btn-tag-2, .btn-tag-4, .btn-tag-5, .btn-tag-6 {
+		margin-left: 0 !important;
+	}
+	.btn-tag-1, .btn-tag-2, .btn-tag-5, .btn-tag-6 {
+		margin-top: 3%;
+	}
+	.news, .tag-head {
+		border-bottom: 3px solid #00E205 !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.img-bai-viet-1 {
+		width: 100%;
+		height: 100%;
+	}
+	.link-bv {
+		display: inherit !important;
+	}
+	p.some-text {
+		margin-bottom: 0;
+	}
+	.text-ketnoi-fb, .text-ketnoi-yt, .text-ketnoi-twitch, .text-ketnoi-twitter {
+		font-size: 12px;
+		padding-right: 2px;
+		padding-left: 2px;
+		bottom: 8%;
+	}
+	.tag-circle-tkbv {
+		margin-top: 4%;
+		width: 15px;
+		height: 7px;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	.img-bai-viet-1 {
+		width: 100%;
+		height: 100%;
+	}
+	.link-bv {
+		display: inherit !important;
+	}
+	p.some-text {
+		margin-bottom: 0;
+	}
+	.text-ketnoi-fb, .text-ketnoi-yt, .text-ketnoi-twitter, .text-ketnoi-twitch {
+		font-size: 16px;
+		bottom: 10%;
+		width: 100%;
+	}
+	.text-ketnoi-twitch {
+		bottom: 8%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.group-img-ketnoi {
+		height: auto;
+		padding-right: 0;
+		margin-top: 5%;
+		padding-left: 0;
+	}
+	.tag-circle-tkbv {
+		margin-top: 1.2%;
+		width: 10px;
+		height: 10px;
+	}
+	
+}
+@media (min-width: 320px) and (max-width: 575px) {
+	.img-bai-viet-1 {
+		width: 100%;
+		height: 100%;
+	}
+	.text-tim-kiem {
+		font-size: 15px;
+	}
+	.result-search-1 {
+		padding-right: 15px; 
+		padding-left: 15px;
+	}
+	.column-green {
+		margin-left: 1rem;
+	}
+	.input-group-tim-kiem {
+	 display: flex;
+	 justify-content: center;
+	}
+	.link-bv {
+		display: inherit !important;
+	}
+	p.some-text {
+		margin-bottom: 0;
+	}
+	.text-ketnoi-fb, .text-ketnoi-yt, .text-ketnoi-twitch, .text-ketnoi-twitter {
+		font-size: 12px;
+		bottom: 15%;
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.text-ketnoi-twitch {
+		bottom: 8%;
+	}
+	.group-img-ketnoi {
+		height: auto;
+		margin-top: 5%;
+		padding-right: 15px; 
+		padding-left: 15px;
+	}
+	.bai-bao {
+		padding-right: 15px; 
+		padding-left: 15px;
+	}
+	.input-group-tim-kiem {
+		width: 100%;
+		margin-right: 15px;
+		margin-left: 15px;
+		margin-top: 10%;
+	}
+	.tag-circle-tkbv {
+		margin-top: 1.2%;
+		width: 10px;
+		height: 10px;
+	}
+	
+}
+@media (min-width: 320px) and (max-width: 425px) {
+	.tag-circle-tkbv {
+		margin-top: 2.25%;
+		width: 15px;
+		height: 10px;
+	}
+}
+@media (min-width: 375px) and (max-width: 425px) {
+    .btn-tag-1, .btn-tag-2, .btn-tag-4, .btn-tag-5, .btn-tag-6 {
+        margin-left: 8px !important;
+    }
+    .tag-circle-tkbv {
+		width: 13px;
+	}
+}
+

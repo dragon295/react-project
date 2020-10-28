@@ -1,0 +1,37 @@
+
+.column-black-qsh {
+    background-color: black;
+    width: 200px;
+    float: left;
+    height: 40px;
+}
+.qsh, .csbm, .csc, .csht, .csdt {
+	font-size: 16px;
+	color: #ffffff;
+}
+.qsh-dk {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFFFFF;
+}
+.box-text-qsh {
+	background-color: black;
+	padding: 13px;
+}
+.text-qsh, .text-csbm, .text-csc, .text-csht, .text-csdt {
+	margin-bottom: 0;
+}
+.link-mail-qsh, .link-fb-qsh {
+	color: white;
+}
+.link-mail-qsh:hover, .link-fb-qsh:hover {
+	color: #00E205;
+	text-decoration: none;
+}
+.para-qsh-2, .para-qsh-3, .para-qsh-4 {
+	margin-top: 40px;
+}
+

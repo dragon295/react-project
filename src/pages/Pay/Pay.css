@@ -1,0 +1,263 @@
+.tt {
+	font-size: 18px;
+	color: #ffffff;
+}
+.img-tt {
+	padding-bottom: 2%;
+}
+.infor-tt, .infor-tt-2,  .infor-tt-3  {
+	background-color: black
+}
+.infor-tt-2, .infor-tt-3  {
+	margin-top: 5%;
+}
+.line-xanh-tt {
+	width: 100%;
+	height: 5px;
+	background-color:  #00E205;
+}
+.title-tt {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 23px;
+	color: #FFFFFF;
+}
+.information-kh {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 18px;
+	color: #bfbaba;
+	margin-bottom: 3%;
+}
+.input-information-kh{
+	height: 30px;
+	padding-left: 3%;
+}
+.input-information-kh-2, .input-information-kh-3  {
+	height: 30px;
+	font-size: 14px;
+}
+.input-information-kh-2, .input-information-kh-3{
+	width: 350px;
+	margin-top: 2%;
+}
+.input-information-kh-3 {
+	padding-left: 3%;
+}
+.select-tt {
+	font-size: 14px;
+	width: 350px;
+	height: 30px;
+	margin-top: 2%;
+}
+.input-information-kh::placeholder {
+	outline: none;
+	border: none;
+	font-size: 14px;
+	color: #343a40;
+}
+.input-information-kh-3::placeholder {
+	font-size: 14px;
+	color: #343a40;
+}
+.name-kh, .sdt-kh, .email-kh {
+	height: 80px;
+}
+.address{
+	margin-top: 10%;
+}
+.giao-hang {
+	margin-top: 3%;
+	width: 30%;
+}
+.ko-bat-buoc {
+	font-size: 13px;
+	margin-bottom: 3%;
+}
+.sao {
+	color: red;
+	font-size: 15px;
+}
+.nav-pills .nav-link-tt.active, .nav-pills .nav-link-tt.focus {
+	background-color: #BCBCBC;
+	color: black;
+	text-align: center;
+	outline: none;
+}
+.nav-pills .nav-link-tt {
+	background-color: #505050;;
+	color: black;
+	font-size: 16px;
+	font-weight: 900;
+	text-align: center;
+	border-radius: 0;
+	outline: none;
+}
+.img-giao-hang {
+	width: 100px;
+	height: 70px !important;
+}
+.radio-tt {
+	width: 18px;
+	height: 18px;
+}
+.httt, .httt-2 {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	color: #FFFFFF;
+	padding-top: 0.15%;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+.img-visa {
+	width: 120px;
+	height: 60px !important;
+}
+.infor-card {
+	background-color: #4a4a4a
+}
+.input-card::placeholder{
+	font-size: 12px;
+}
+.btn-secondary {
+	border-radius: 0;
+}
+.add-card {
+	text-align: center;
+} 
+.btn-back {
+	background-color: #00E205;
+	color: black;
+	font-weight: bold;
+	font-style: normal;
+	width: 150px;
+	height: 50px;
+}
+.back {
+	text-decoration: none;
+	color: white;
+	margin-top: 50px;
+}
+.back:hover {
+	text-decoration: none;
+	color: white;
+}
+.btn-back:hover {
+	text-decoration: none;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.select-tt {
+		width: 300px;
+	}
+	.input-information-kh-2, .giao-hang, .input-information-kh-3{
+		width: 300px;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	.select-tt {
+		width: 300px;
+	}
+	.input-information-kh-2, .giao-hang, .input-information-kh, .input-information-kh-3 {
+		width: 300px;
+	}
+	.address, .giao-hang {
+		margin-top: 0;
+	}
+}
+@media (min-width: 320px) and (max-width: 575px) {
+	.select-tt {
+		width: 250px;
+	}
+	.input-information-kh-2, .giao-hang, .input-information-kh, .input-information-kh-3 {
+		width: 250px;
+	}
+	.address, .giao-hang {
+		margin-top: 0;
+	}
+	.input-card {
+		width: 100px;
+	}
+	.giao-hang {
+		width: 100% !important;
+	}
+	.img-giao-hang {
+		width: 80px;
+		height: 60px !important;
+	}
+	.name-sip {
+		margin-left: 3%;
+	}
+	.box-img-giao-hang {
+		justify-content: space-around !important; 
+	}
+}
+@media (min-width: 350px) and (max-width: 375px) {
+	.input-card {
+		width: 130px;
+	}
+	.select-tt {
+		width: 280px;
+	}
+		.input-information-kh-2, .giao-hang, .input-information-kh, .input-information-kh-3 {
+		width: 280px;
+	}
+	.name-sip {
+		margin-left: 6%
+	}
+}
+@media (min-width: 400px) and (max-width: 425px) {
+	.input-card {
+		width: 150px;
+	}
+	.select-tt {
+		width: 350px;
+	}
+	.input-information-kh-2, .giao-hang, .input-information-kh, .input-information-kh-3 {
+		width: 350px;
+	}
+}
+@media (min-width: 426px) and (max-width: 529px) {
+	.input-card {
+		width: 150px;
+	}
+	.select-tt {
+		width: 380px;
+	}
+	.input-information-kh-2, .giao-hang, .input-information-kh, .input-information-kh-3 {
+		width: 380px;
+	}
+}
+@media (min-width: 530px) and (max-width: 575px) {
+	.input-card {
+		width: 170px;
+	}
+	.select-tt {
+		width: 400px;
+	}
+	.input-information-kh-2, .giao-hang, .input-information-kh, .input-information-kh-3 {
+		width: 400px;
+	}
+	.name-sip {
+		margin-left: 12%;
+	}
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:40%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+

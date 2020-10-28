@@ -1,0 +1,659 @@
+header {
+	width: 100%;
+	height: 160px;
+	background-color: black;
+}
+a:hover {
+	text-decoration: none;
+}
+/*///////////////////////////////////////////////////// LOGO //////////////////////////////////////////*/
+.logo {
+	width: 80%;
+	height: 80%;
+}
+/*///////////////////////////////////////////////////// NAVBAR-INPUT //////////////////////////////////////////*/
+.btn {
+	transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out !important
+}
+.input-navbar {
+	margin-top: 3%;
+}
+.dh {
+	height: 30%;
+	display: flex;
+	justify-content: center;
+}
+.item-nav {
+	padding-right: 20px;
+	font-size: 14px;
+}
+.navbar-dark .navbar-nav .link-nav {
+	color: white;
+}
+.navbar-dark .navbar-nav .link-nav:hover {
+	color: white;
+}
+.link-nav {
+	padding-right: 3%;
+	padding-left: 3%;
+}
+.fix {
+	display: flex;
+	justify-content: center;
+}
+/* .navbar-collapse {
+	flex-grow: 0;
+} */
+.input-header {
+	margin-top: 2%;
+	width: 80%;
+}
+.input-search {
+	height: 35px;
+}
+.input-search:focus {
+	box-shadow: none;
+}
+.btn-search {
+	background-color: #00E205;
+	height: 35px;
+	width: 35px;
+	border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.btn-search:hover {
+	opacity: 0.7;
+	transition: 0.25s linear;
+}
+.search-icon {
+	width: 25px;
+	height: 25px;
+}
+.button-dropdown:focus {
+	outline: none !important;
+}
+/* ///////////////////////////////////////////////////////////// MODAL/////////////////////////////// */
+.active-modal-header, .modal-backdrop.show {
+	transition: .35s linear ;
+}
+/* .modal-backdrop.show {
+	transition: transform .3s ease-out,-webkit-transform .3s ease-out ;
+} */
+button.close-hd {
+	outline: none;
+	background-color: #a3a3a3e0;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 400;
+    height: 35px;
+    position: absolute;
+    right: -5px;
+    top: -3px;
+    width: 35px;
+    z-index: 1;
+    color: black;
+}
+button.close:hover {
+	color: white;
+}
+.modal-fix {
+	top: 3.5%;
+	left: -4.6%;
+}
+.modal-body {
+	background-color: #27282e;
+}
+.modal-header-icon {
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}
+.close {
+	opacity: 1;
+}
+.fa-times-circle {
+	font-size: 35px;
+} 
+.nav-pills .link-sign.active {
+	background-color: white;
+	font-size: 19px;
+	border: none;
+	color: black;
+}
+.nav-pills .link-sign {
+	border: 0.05rem solid #1d1b1b;
+	color: white;
+	background-color: #1d1b1b;
+	font-size: 18px;
+}
+.nav-pills .link-sign:focus {
+	outline: none;
+}
+.modal-footer {
+	border-top: none;
+	justify-content: flex-start;
+}
+.modal-footer>* {
+	margin-left: 0;
+}
+.text-1 {
+	color: white;
+	font-size: 15px;
+}
+.icon-sign {
+	width: 35px;
+	height: 35px;
+}
+.line-1, .line-2 {
+	width: 50%;
+	height: 2px;
+	background-color: white;
+	margin-top: 2.5%;
+}
+.or-1 {
+	color: white;
+	font-size: 16px;
+}
+.text-2 {
+	color: white;
+	font-size: 15px;
+}
+.text-name, .text-pass {
+	color: #C9C4C4;
+	font-size: 14px;
+}
+.forgot {
+	font-size: 12px;
+	color: #C9C4C4;
+	text-decoration-line: underline; 
+}
+.btn-sign-in {
+	background-color: #00E205;
+	width: 150px;
+}
+.check {
+	width: 15px;
+	height: 15px;
+	border-radius: 180px;
+}
+.text-remember {
+	color: white;
+	font-size: 12px;
+}
+.sign-input {
+	padding-left: 2%;
+	font-size: 14px;
+}
+.sign-input::placeholder {
+	font-size: 12px;
+}
+.accept {
+	text-decoration: none;
+	position: relative;
+}
+.text-accept-1, .text-accept-3 {
+	color: white;
+	font-size: 14px
+}
+.text-accept-2, .text-accept-4 {
+	color: #00E205;
+	font-size: 14px;
+}
+.text-accept-2:hover, .text-accept-4:hover {
+	color: #28a745;
+	text-decoration: none;
+}
+.radio-check {
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	bottom: 10px;
+}
+.error {
+	font-size: 12px;
+	color: red;
+}
+/*///////////////////////////////////////////////////// CÁC BUTTON //////////////////////////////////////////*/
+.some-button {
+	margin-top: 3%;
+}
+.btn-dnhap {
+	margin-right: 15%;
+	padding: 6px 3px;
+	background-color:  #00E205;
+	color: black;
+	font-size: 14px;
+	width: 35%;
+	height: 30%;
+	font-weight: 900;
+	font-style: normal;
+}
+.btn-dki {
+	background-color:  #00E205;
+	font-size: 14px;
+	width: 35%;
+	height: 30%;
+	color: black;
+	font-weight: 900;
+	font-style: normal;
+}
+.box-hv {
+	color: #f2f1f1cc;
+	font-size: 25px;
+	cursor: pointer;
+	margin-left: 23%;
+	position: relative !important;
+	width: 35px;
+	transition: all 0.2s linear;
+}
+.circle-count-1 {
+	position: absolute;
+	background-color: red;
+	top: 0px;
+	right: 0px;
+	width: 15px;
+	height: 15px;
+	font-size: 10px;
+	color: white;
+	border-radius: 180px;
+	text-align: center;
+}
+.circle-count-fixed {
+	position: absolute;
+	background-color: #178c1a;
+	top: 10px;
+	right: 5px;
+	width: 15px;
+	height: 15px;
+	font-size: 10px;
+	color: white;
+	border-radius: 180px;
+	text-align: center;
+}
+.box-hv:hover {
+	color: #ffffff;
+	transition: all 0.2s linear;
+}
+.heart-header {
+	color: #f2f1f1cc;
+	font-size: 28px;
+	cursor: pointer;
+	margin-left: 33%;
+	position: relative !important;
+	width: 32px;
+	transition: all 0.2s linear;
+}
+.heart-header:hover {
+	color: #ffffff;
+	transition: all 0.2s linear;
+}
+.heart-header {
+	color: #f2f1f1cc;
+	font-size: 28px;
+	cursor: pointer;
+	margin-left: 30%;
+	position: relative !important;
+	width: 32px;
+	transition: all 0.2s linear;
+}
+.heart-header:hover {
+	color: #ffffff;
+	transition: all 0.2s linear;
+}
+.circle-count-2 {
+	position: absolute;
+	background-color: red;
+	top: 3px;
+	right: 0px;
+	width: 15px;
+	height: 15px;
+	font-size: 10px;
+	color: white;
+	border-radius: 180px;
+	text-align: center;
+	z-index: 100
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+/*///////////////////////////////////////////////////// CÁC BUTTON  //////////////////////////////////////////*/
+	.btn-dnhap {
+		padding: 6px 0px;
+	}
+	.box-hv {
+		margin-left: 20%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	header {
+		position: relative;
+	}
+	.logo {
+		width: 34%;
+		height: 35%;
+		margin-left: 12%;
+		margin-top: 1%;
+		}
+/*///////////////////////////////////////////////////// NAVBAR-INPUT //////////////////////////////////////////*/
+	.input-navbar {
+		margin-top: 0;
+		position: absolute;
+		top: 63%;
+		left: 0;
+	}
+	.dh {
+		width: 35%;
+		position: absolute;
+		top: 18px;
+		left: 1.5%;
+	}
+	.input-header {
+		position: absolute;
+		top: 2px;
+		left: 16%;
+		width: 65%;
+		height: 32px;
+	}
+	.collapse-navbar {
+		background-color: #343a40;
+		display: flex;
+		justify-content: center;
+		z-index: 500;
+		transition:  0.2s linear;
+	}
+	.link-nav {
+		display: flex !important;
+		justify-content: center;
+	}
+	.item-nav {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.button-dropdown {
+		font-size: 15px;
+		color: white!important;
+		border-color: white;
+		background-color:  #343a40;
+	}
+	.input-search {
+		height: 32px;
+	}
+	.btn-search {
+		height: 32px;
+	}
+/*///////////////////////////////////////////////////// CÁC BUTTON  //////////////////////////////////////////*/
+	.btn-dnhap {
+		padding: 6px 0px;
+	}
+	.box-hv {
+		margin-left: 25%;
+	}
+	.modal-fix {
+		top: 0;
+		left: 0;
+	}
+	.heart-header {
+		margin-left: 31%;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px) {
+	header {
+		position: relative;
+	}
+	.logo {
+		width: 43%;
+		height: 45%;
+		margin-left: 10%;
+		}
+	.col-4 {
+		height: 120px;
+	}
+/*///////////////////////////////////////////////////// NAVBAR-INPUT //////////////////////////////////////////*/
+	.input-navbar {
+		margin-top: 0;
+		position: absolute;
+		top: 63%;
+		left: 0;
+	}
+	.dh {
+		width: 35%;
+		position: absolute;
+		top: 18px;
+		left: 1.5%;
+	}
+	.input-header {
+		position: absolute;
+		top: 2px;
+		left: 15.3%;
+		width: 65%;
+		height: 32px;
+	}
+	.collapse-navbar {
+		background-color: #343a40;
+		z-index: 500;
+		transition: 0.2s linear;
+	}
+	.nav-navbar {
+		width: 200px;
+		margin-left: 0%;
+	}
+	.button-dropdown {
+		font-size: 15px;
+		color: white!important;
+		border-color: white;
+		background-color:  #343a40;
+	}
+	.link-nav {
+		display: flex !important;
+		justify-content: center;
+	}
+	.item-nav {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.input-search {
+		height: 32px;
+	}
+	.btn-search {
+		height: 32px;
+	}
+	.modal-fix {
+		left: 0;
+		top: 5%;
+	}
+	.heart-header {
+		margin-left: 29%;
+	}
+	
+/*///////////////////////////////////////////////////// CÁC BUTTON  //////////////////////////////////////////*/
+	.btn-dnhap {
+		padding: 6px 0px;
+	}
+}
+@media (min-width: 320px) and (max-width: 575px) {
+	header {
+		position: relative;
+	}
+	.logo {
+		width: 100%;
+		height: 100%;
+		margin-left: 5%;
+		}
+/*///////////////////////////////////////////////////// NAVBAR-INPUT //////////////////////////////////////////*/
+	.input-navbar {
+		margin-top: 0;
+		position: absolute;
+		top: 63%;
+		left: 0;
+	}
+	.dh {
+		width: 35%;
+		position: absolute;
+		top: 18px;
+		left: -3%;
+	}
+	.input-header {
+		position: absolute;
+		top: 2px;
+		left: 7%;
+		width: 71%;
+		height: 32px;
+	}
+	.collapse-navbar {
+		background-color: #343a40;
+		z-index: 500;
+		transition:  0.2s linear;
+		justify-content: center;
+	}
+	
+	.button-dropdown {
+		font-size: 15px;
+		color: white!important;
+		border-color: white;
+		background-color:  #343a40;
+	}
+	.fix {
+		display: initial;
+	}
+	.input-search {
+		height: 32px;
+	}
+	.link-nav {
+		display: flex !important;
+		justify-content: center;
+	}
+	.item-nav {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.nav-navbar {
+		width: 180px;
+	}
+	.btn-search {
+		height: 32px;
+	}
+/*///////////////////////////////////////////////////// CÁC BUTTON  //////////////////////////////////////////*/
+	.some-button {
+		height: 100px;
+		margin-top: 8%;
+	}
+	.btn-dnhap {
+		padding: 6px 0px;
+		width: 40%;
+		height: 30px;
+		font-size: 13px;
+	}
+	.btn-dki {
+		width: 40%;
+		height: 30px;
+		font-size: 13px;
+	}
+	.modal-fix {
+		left: 0;
+		top: 3%;
+	}
+	.text-1, .text-2 {
+		font-size: 14px;
+	}
+	.link-sign.active, .link-sign {
+		font-size: 16px;
+	}
+	.icon-group {
+		justify-content: space-between !important;
+	}
+	.icon-sign {
+		width: 35px;
+		height: 35px;
+	}
+	button.close-hd {
+		width: 30px;
+		height: 30px;
+		top: 1px;
+		right: 5px;
+	}
+	.circle-count-1 {
+		top: 0px;
+		right: 4px;
+	}
+	.circle-count-2 {
+		top: 0px;
+		right: 4px;
+	}
+}
+@media (min-width: 320px) and (max-width: 360px) {
+	.radio-check {
+		bottom: 20px;
+	}
+	.nav-navbar {
+		width: 180px;
+		margin-left: 150px;
+	}
+	.link-nav {
+		justify-content: flex-start;
+	}
+	.item-nav {
+		padding-left: 0;
+	}
+	.box-hv {
+		margin-left: 18%;
+		font-size: 20px;
+	}
+	.heart-header {
+		margin-left: 33%;
+		font-size: 20px;
+	}
+}
+@media (min-width: 375px) and (max-width: 425px) {
+	.logo {
+		width: 90%;
+		height: 90%;
+	}
+	.dh {
+		left: -5%;
+	}
+	.input-header {
+		left: 6%;
+		width: 75%
+	}
+	.box-hv {
+		margin-left: 20%;
+		font-size: 20px;
+	}
+	.heart-header {
+		margin-left: 35%;
+		font-size: 20px;
+	}
+	.nav-navbar {
+		width: 180px;
+		margin-left: 150px;
+	}
+	.link-nav {
+		justify-content: flex-start;
+	}
+	.item-nav {
+		padding-left: 0;
+	}
+}
+@media (min-width: 426px) and (max-width: 575px) {
+	.logo {
+		width: 70%;
+		height: 70%;
+	}
+	.dh {
+		left: -1%;
+	}
+	.some-button {
+		margin-top: 5%;
+	}
+	.input-header {
+		left: 12%;
+		width: 65%
+	}
+	.box-hv {
+		margin-left: 23%;
+		font-size: 20px;
+	}
+	.heart-header {
+		margin-left: 38%;
+		font-size: 20px;
+	}
+}
+

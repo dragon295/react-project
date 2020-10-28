@@ -1,0 +1,224 @@
+footer {
+	background-color: black;
+}
+.navbar-toggler:focus {
+	outline: none !important;
+}
+.navbar-toggler-footer.focus, .navbar-toggler-footer:active, .navbar-toggler-footer:focus, .navbar-toggler-footer:hover {
+	background-color: black !important;
+	border-color: black !important;
+	box-shadow: none !important;
+	outline: none;
+}
+.navbar-toggler-footer {
+	padding-right: 0.25rem;
+}
+.navbar-footer {
+	background-color: black;
+	/*border-bottom: 2px solid white;*/
+}
+.navbar-brand-footer {
+	margin-left: 1.5%;
+	color: white !important;
+}
+.nav-link-footer {
+	color: white !important;
+	font-size: 14px;
+	float: left;
+}
+.navbar-nav .nav-link-footer {
+	padding-left: 8px !important;
+}
+.navbar-expand-lg .navbar-collapse-footer {
+	flex-basis: 100%;
+}
+.nav-text {
+	color: white !important;
+	font-size: 14px;
+	float: left;
+	padding-left: 8px;
+	padding-right: 8px;
+	line-height: 20px;
+}
+.nav-link-footer:hover {
+	color: #00E205 !important;
+}
+.nav-item-footer {
+	width: auto;
+	display: block;
+}
+.fa-caret-down {
+	font-size: 40px;
+	color: white;
+	float: right;
+}
+/* ////////////////////////////////////////////// KẾT NỐI ////////////////////////////////// */
+.icon {
+	width: 35px;
+	height: 35px;
+	margin-right: 15%;
+}
+.fix-2 {
+	flex-direction: column !important;
+}
+.ketnoi {
+	margin-bottom: 2.5%;
+}
+.column-1, .column-2, .collapse-column-1, .collapse-column-2  {
+	
+	justify-content: center;
+}
+.column-1 {
+	margin-bottom: 6%;
+}
+.collapse-column-1 {
+	margin-bottom: 2%;
+}
+/* ////////////////////////////////////////////// Email ////////////////////////////////// */
+.input-footer {
+	width: 100%;
+}
+.btn-send {
+	width: 50px;
+	font-size: 14px;
+	background-color: #00E205
+}
+.nhan-tin {
+	margin-bottom: 4.5%;
+}
+.column-3, .collapse-column-3 {
+	display: flex;
+	justify-content: center;
+}
+.column-3 {
+	margin-bottom: 8%;
+}
+/* ////////////////////////////////////////////// Đánh giá ////////////////////////////////// */
+.fa-star {
+	font-size: 30px;
+	color: #f1c40f;
+	margin-right: 5%;
+}
+.danh-gia {
+	margin-bottom: 4.5%;
+}
+.column-4, .collapse-column-4 {
+	display: flex;
+	justify-content: center;
+}
+/* ////////////////////////////////////////////// sở hữu////////////////////////////////// */
+.so-huu {
+	background-color: grey;
+	height: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+@media (min-width: 320px) and (max-width: 991px) {
+	footer {
+		height: 375px;
+	}
+	.column-1, .column-2, .collapse-column-1, .column-3, .column-4{
+		justify-content: space-between;
+	}
+	.column-1, .column-3 {
+		margin-bottom: 0px;
+	}
+	.nav-item-footer {
+		display: initial !important;
+	}
+	.navbar-footer {
+		border-bottom: 2px solid white;
+	}
+	.navbar-brand-footer {
+		font-size: 18px;
+		margin-left: 1%;
+	}
+	.navbar-nav-ketnoi, .navbar-nav-nhantin, .navbar-nav-danhgia {
+		flex-direction: row;
+		justify-content: center;
+		padding: 8px;
+	}
+	.ketnoi, .nhan-tin, .danh-gia {
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 320px) and (max-width: 464px) {
+	.so-huu {
+		height: 50px;
+	}
+}
+@media (min-width: 1250px) and (max-width: 1400px) {
+	.danh-gia {
+		margin-bottom: 3%;
+	}
+	.column-1 {
+		margin-bottom: 5%;
+	}
+	.column-3 {
+		margin-bottom: 7%;
+	}
+} 
+@media (min-width: 1450px) and (max-width: 1550px) {
+	.column-3 {
+		margin-bottom: 5%;
+	}
+	.column-1 {
+		margin-bottom: 3%;
+	}
+}
+@media (min-width: 1551px) and (max-width: 1651px) {
+	.column-3 {
+		margin-bottom: 5%;
+	}
+	.column-1 {
+		margin-bottom: 4%;
+	}
+	.danh-gia {
+		margin-bottom: 3%;
+	}
+} 
+@media (min-width: 1652px) and (max-width: 1752px) {
+	.column-3 {
+		margin-bottom: 4%;
+	}
+	.column-1 {
+		margin-bottom: 3%;
+	}
+	.danh-gia {
+		margin-bottom: 3%;
+	}
+} 
+@media (min-width: 1753px) and (max-width: 1853px) {
+	.column-3 {
+		margin-bottom: 3%;
+	}
+	.column-1 {
+		margin-bottom: 2%;
+	}
+	.danh-gia {
+		margin-bottom: 3%;
+	}
+}  
+@media (min-width: 1854px) and (max-width: 1920px) {
+	.column-3 {
+		margin-bottom: 3%;
+	}
+	.column-1 {
+		margin-bottom: 2%;
+	}
+	.danh-gia {
+		margin-bottom: 3%;
+	}
+}  
+@media (min-width: 1920px) and (max-width: 3000px) {
+	.column-3 {
+		margin-bottom: 2%;
+	}
+	.column-1 {
+		margin-bottom: 1%;
+	}
+	.danh-gia {
+		margin-bottom: 3%;
+	}
+}  
