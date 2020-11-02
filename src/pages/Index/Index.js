@@ -5,13 +5,26 @@ import Footer from '../../component/Footer.js'
 import './Index.css'
 import { Carousel, Container, Row, Col, Nav, Tab, Modal } from 'react-bootstrap';
 import ScrollToTop from "react-scroll-up";
+import { useForm } from "react-hook-form";
 function Index() {
   document.title = "Trang chủ";
   useEffect(() => {
     window.scrollTo(0, 0)
   }, []);
 
+  const { register, handleSubmit, getValues , errors } = useForm();
+  
+  const signIn = (data) => {
+    if (data !== "") {
+      window.location.reload()
+    }
+  } 
 
+  const signUp = (data2) => {
+    if (data2 !== "") {
+      window.location.reload()
+    }
+  } 
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -358,7 +371,7 @@ function Index() {
                     </button>
                   </div>
                   <Modal.Body>
-                    <Tab.Container id="controlled-tab-example-mid" defaultActiveKey="second">
+                    <Tab.Container id="controlled-tab-example2" defaultActiveKey="second">
                       <Nav variant="pills" className="d-flex justify-content-center">
                         <Nav.Item className="nav-item w-50 mb-3">
                           <Nav.Link eventKey="first" className="nav-link link-sign d-flex justify-content-center">Đăng nhập</Nav.Link>
@@ -387,22 +400,22 @@ function Index() {
                             <div className="text-2">
                               <span>Đăng nhập với Tài khoản</span>
                             </div>
-                            <form action="#" id="infor-dn">
+                            <form onSubmit={handleSubmit(signIn)}>
                               <div className="sign-name d-flex flex-column mt-2">
                                 <span className="text-name">Tài khoản</span>
-                                <input type="text" name="Tài-khoản" placeholder="Tên tài khoản" className="sign-input" id="name-tk" />
-                                <span id="error-tk" className="error" />
+                                <input type="text" name="SignInAccount" placeholder="Tên tài khoản" className="sign-input" ref={register({ required: true })} />
+                                {errors.SignInAccount && <span className="error mt-1">Vui lòng điền Tài khoản</span>}
                               </div>
                               <div className="sign-pass d-flex flex-column mt-2">
                                 <span className="text-pass">Mật khẩu</span>
-                                <input type="password" name="password" placeholder="Mật khẩu" className="sign-input" id="pass-tk" />
-                                <span id="errorpass" className="error" />
+                                <input type="password" name="SignInPassword" placeholder="Mật khẩu" className="sign-input" ref={register({ required: true })} />
+                                {errors.SignInPassword && <span className="error mt-1">Vui lòng điền Mật khẩu</span>}
                               </div>
                               <div className="quen-pass mt-1">
                                 <Link to="#"><span className="forgot">Quên mật khẩu ?</span></Link>
                               </div>
                               <div className="modal-footer px-0 pb-2">
-                                <button type="submit" value="submit" className="btn btn-success btn-sign-in" id="infor-dn">Đăng nhập</button>
+                                <input type="submit" value="Đăng nhập" className="btn btn-success btn-sign-in" />
                               </div>
                             </form>
                             <div className="remember d-flex">
@@ -427,27 +440,35 @@ function Index() {
                               <span className="or-1 px-2">Hoặc</span>
                               <div className="line-2 " />
                             </div>
-                            <form action="#" id="infor-dk">
+                            <form onSubmit={handleSubmit(signUp)} >
                               <div className="text-2">
                                 <span>Đăng kí với Tài khoản</span>
                               </div>
                               <div className="sign-name d-flex flex-column mt-2">
                                 <span className="text-name">Tài khoản</span>
-                                <input type="text" name="Tài-khoản" placeholder="Tên tài khoản" className="sign-input" id="name" />
-                                <span id="error-tk" className="error" />
+                                <input type="text" name="SignUpAccount" placeholder="Tên tài khoản" className="sign-input" ref={register({ required: true })} />
+                                {errors.SignUpAccount && <span className="error mt-1">Vui lòng điền Tài khoản</span>}
                               </div>
                               <div className="sign-pass d-flex flex-column mt-2">
                                 <span className="text-pass">Mật khẩu</span>
-                                <input type="password" name="password" placeholder="Mật khẩu" className="sign-input" id="pass" />
-                                <span id="errorpass" className="error" />
+                                <input type="password" name="SignUpPassword" placeholder="Mật khẩu" className="sign-input" ref={register({ required: true })} />
+                                {errors.SignUpPassword && <span className="error mt-1">Vui lòng điền Mật khẩu</span>}
                               </div>
                               <div className="sign-repass d-flex flex-column mt-2">
                                 <span className="text-pass">Nhập lại mật khẩu</span>
-                                <input type="password" name="repassword" placeholder="Mật khẩu" className="sign-input" id="repass" />
-                                <span id="errorrepass" className="error" />
+                                <input type="password" name="RePassword" placeholder="Mật khẩu" className="sign-input" ref={register({
+                                  required: true,
+                                  validate: {
+                                    matchesPreviousPassword: value => {
+                                      const { SignUpPassword } = getValues();
+                                      return value === SignUpPassword || "Nhập lại Mật khẩu chưa đúng hoặc chưa nhập";
+                                    }
+                                  }
+                                })} />
+                                {errors.RePassword && <span className="error mt-1">Nhập lại Mật khẩu chưa đúng hoặc chưa nhập</span>}
                               </div>
                               <div className="accept mt-2">
-                                <input type="radio" name="Chấp nhận" className="radio-check my-2 py-2" />
+                                <input type="radio" name="Accept" className="radio-check my-2 py-2" />
                                 <div className="pl-4">
                                   <span className="text-accept-1 mt-0 mr-1">Tôi chấp nhận các</span>
                                   <Link to="ownership" className="text-accept-2 mt-3">Quyền - Điều khoản , chính sách Cookie </Link>
@@ -456,7 +477,7 @@ function Index() {
                                 </div>
                               </div>
                               <div className="modal-footer px-0 pb-2">
-                                <button type="submit" value="submit" className="btn btn-success btn-sign-in">Đăng kí</button>
+                                <input type="submit" value="Đăng kí" className="btn btn-success btn-sign-in" action="/" />
                               </div>
                             </form>
                           </Container>

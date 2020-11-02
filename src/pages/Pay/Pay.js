@@ -38,10 +38,10 @@ function Pay() {
     const [communes, setCommune] = useState([]);
     useEffect(() => {
         async function getListCity() {
-            const citys = await fetch("http://localhost:4000/listCity").then(res => res.json());
-            const districts = await fetch("http://localhost:4000/listDictrict").then(res => res.json());
+            const citys = await fetch("https://tda295.herokuapp.com/listCity").then(res => res.json());
+            const districts = await fetch("https://tda295.herokuapp.com/listDictrict").then(res => res.json());
             const filterDistricts = districts.filter(district => district.idProvince === dataCity);
-            const communes = await fetch("http://localhost:4000/listCommune").then(res => res.json());
+            const communes = await fetch("https://tda295.herokuapp.com/listCommune").then(res => res.json());
             const filterCommunes = communes.filter(commune => commune.idDistrict === dataCommune);
             setDistrict(filterDistricts);
             setCommune(filterCommunes);
